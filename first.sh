@@ -43,11 +43,21 @@ echo ""
 echo "Installing Cinnamon Desktop..."
 sudo apt update
 sudo apt install cinnamon-desktop-environment unzip git -y
+echo "Installing all Ubuntu Cinnamon base themes and icons. NOTE: You may need to change these things manually in the Appearances settings page."
 sudo unzip kinmo.zip
 sudo cp kinmo-gtk-theme-master/usr/share/themes/* /usr/share/themes/
 sudo git clone https://github.com/ubuntucinnamon/ubuntucinnamon-wallpapers/
 sudo cp -r ubuntucinnamon-wallpapers/usr/share/backgrounds/ubuntucinnamon /usr/share/backgrounds
 sudo cp -r ubuntucinnamon-wallpapers/usr/share/gnome-background-properties /usr/share/gnome-background-properties
+sudo git clone https://github.com/ubuntucinnamon/ubuntucinnamon-artwork/
+sudo cp -r ubuntucinnamon-artwork/etc/lightdm/lightdm.conf.d/ /etc/lightdm/
+sudo git clone https://github.com/ubuntucinnamonremix/kimmo-icon-theme
+sudo cp -r kinmo-icon-theme/Kinmo* /usr/share/icons/
+sudo git clone https://github.com/ubuntucinnamon/yaru-cinnamon
+sudo cp -r yaru-cinnamon/usr/share/themes/* /usr/share/themes/
+sudo cp -r yaru-cinnamon/usr/share/icons/* /usr/share/icons/
+sudo git clone https://github.com/ubuntucinnamon/ubuntucinnamon-environment
+sudo cp -r ubuntucinnamon-environment/usr/share/* /usr/share/*
 sudo apt purge deja-dup gdebi gnome-games gnote hexchat inkscape libreoffice* remmina sound-juicer synaptic yelp --autoremove -y
 sudo apt purge firefox-esr --autoremove -y
 sudo apt purge snapd --autoremove -y
