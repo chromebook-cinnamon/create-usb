@@ -43,6 +43,9 @@ echo ""
 echo "Installing Cinnamon Desktop..."
 sudo apt update
 sudo apt install cinnamon-desktop-environment -y
+sudo add-apt-repository ppa:ubuntucinnamonremix/all
+sudo apt update
+sudo apt install cinnamon-folder-color kimmo-gtk-theme ubuntucinnamon-artwork	ubuntucinnamon-meta ubuntucinnamon-wallpapers -y
 sudo apt purge deja-dup gdebi gnome-games gnote hexchat inkscape libreoffice* remmina sound-juicer synaptic yelp --autoremove -y
 sudo apt purge firefox-esr --autoremove -y
 sudo apt purge snapd --autoremove -y
