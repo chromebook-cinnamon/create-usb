@@ -38,16 +38,15 @@ First, we will need to download the image file. Download the image you want in t
 
 ### Disk Image Releases (Hosted on MEGA.nz)
 
-[Ubuntu 22.04](https://mega.nz/file/2McigCCK#qqGJ4vrkecRVWKscxhQ1kxS5uKA9Vl64hsRJG534QVs)
+[Ubuntu 22.04 (In PROGRESS)](https://example.com)
 
-[Ubuntu 23.10](https://mega.nz/file/LEtk3RLb#BCBwhxv7yO6SKarAlZj54r4979ANJRtV3qY6-bAuejM)
 
 
 Now, open up a terminal and type and ```cd``` into the directory where the downloaded image is (usually ~/Downloads).
 
 > WARNING: THIS STEP WILL ERASE ALL DATA ON THE TARGET DRIVE!
 
-Then, type in ```cat ubuntu-unity.img.gz | gunzip | sudo dd of=/dev/TARGET```
+Then, type in ```cat ubuntu-cinnamon.img.gz | gunzip | sudo dd of=/dev/TARGET```
 
 > Make sure to replace TARGET with the device node of your target USB/SD Card (eg. sda, sdb, mmcblk0).
 
@@ -59,11 +58,11 @@ Insert the USB/SD Card into one of the available USB ports (do not use a USB/SD 
                                                                                                    
 Then, turn on the computer and press CTRL+U to boot into the USB.
 
-> NOTE: The username is linux and the password is ubuntuunity
+> NOTE: The username is linux and the password is ubuntucinnamon
 
 Login with the username and password above.
 
-Once you reach the Unity Desktop, open up the terminal.
+Once you reach the Cinnamon Desktop, open up the terminal.
 
 Then, type in ```sudo bash /scripts/extend-rootfs.sh```
 
@@ -73,7 +72,7 @@ This will increase the size of the root partition from the default size of ~16GB
 
 Follow all of step 1, but replace TARGET with the device node of the internal storage (usually mmcblk0).
 
-# Make your own Ubuntu Unity USB/SD Card
+# Make your own Ubuntu Cinnamon USB/SD Card
 
 ## 1. Flashing the USB
 
@@ -105,7 +104,7 @@ After that, open the terminal.
 
 Type in ``` sudo apt update && sudo apt install git -y ```. This command will install Git.
 
-Then, type in ```cd ~ && git clone https://github.com/chromebook-unity/create-usb && cd create-usb && bash first.sh```
+Then, type in ```cd ~ && git clone https://github.com/chromebook-cinnamon/create-usb && cd create-usb && bash first.sh```
 
 > NOTE: After running the script, the username is still linux. The password is whatever you have set when running the script.
 
@@ -120,4 +119,4 @@ To do this, open up a terminal window, and type in ```cd ~/create-usb && bash up
 Then, the script will run a few commands, and you will need to select the release you want to upgrade to.
 
 ## License Info
-Ubuntu Unity is licensed under the GPLv3 license and includes components from other open-source projects, such as the Unity Desktop.
+Ubuntu Cinnamon ARM Chromebook Edition is licensed under the GPLv3 license and includes components from other open-source projects, such as the Cinnamon Desktop.
