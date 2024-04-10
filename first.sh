@@ -40,10 +40,9 @@ echo ""
 echo "Setting root password..."
 sudo passwd
 echo ""
-echo "Installing Unity Desktop..."
+echo "Installing Cinnamon Desktop..."
 sudo apt update
-sudo apt install ubuntu-unity-desktop notification-daemon -y --no-install-recommends
-sudo apt install unity-tweak-tool indicator-* hud -y 
+sudo apt install cinnamon-desktop-environment -y
 sudo apt purge firefox-esr --autoremove -y
 sudo apt purge snapd --autoremove -y
 sudo apt install gnome-software -y
@@ -55,16 +54,16 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] http
 sudo apt update
 sudo apt install brave-browser -y
 echo ""
-echo "Setting Hostname to ubuntu-unity..."
-sudo hostnamectl set-hostname ubuntu-unity
+echo "Setting Hostname to ubuntu-cinnamon..."
+sudo hostnamectl set-hostname ubuntu-cinnamon
 echo ""
 sleep 7
 clear
-echo "The Ubuntu Unity Conversion Script has finished..."
+echo "The Ubuntu Cinnamon Conversion Script has finished..."
 echo ""
 echo "Rebooting in 10 seconds... (Press CTRL+C to cancel reboot)"
 echo "" 
-echo "After rebooting, at the login screen, click on the icon near the password field and select Unity, then log in. After that, open the terminal, and run second.sh, in the same directory."
+echo "After rebooting, at the login screen, click on the icon near the password field and select Cinnamon, then log in. After that, open the terminal, and run second.sh, in the same directory."
 sleep 10
 systemctl reboot
 
