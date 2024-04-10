@@ -43,6 +43,7 @@ echo ""
 echo "Installing Cinnamon Desktop..."
 sudo apt update
 sudo apt install cinnamon-desktop-environment -y
+sudo apt purge deja-dup gdebi gnome-games gnote hexchat inkscape libreoffice* remmina sound-juicer synaptic yelp --autoremove -y
 sudo apt purge firefox-esr --autoremove -y
 sudo apt purge snapd --autoremove -y
 sudo apt install gnome-software -y
