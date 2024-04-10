@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Welcome to the Ubuntu Unity Conversion tool!"
+echo "Welcome to the Ubuntu Cinnamon Conversion script!"
 echo ""
 echo "Setting variables..."
 KERNEL=$(uname -r)
