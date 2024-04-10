@@ -42,9 +42,12 @@ sudo passwd
 echo ""
 echo "Installing Cinnamon Desktop..."
 sudo apt update
-sudo apt install cinnamon-desktop-environment unzip -y
+sudo apt install cinnamon-desktop-environment unzip git -y
 sudo unzip kinmo.zip
 sudo cp kinmo-gtk-theme-master/usr/share/themes/* /usr/share/themes/
+sudo git clone https://github.com/ubuntucinnamon/ubuntucinnamon-wallpapers/
+sudo cp -r ubuntucinnamon-wallpapers/usr/share/backgrounds/ubuntucinnamon /usr/share/backgrounds
+sudo cp -r ubuntucinnamon-wallpapers/usr/share/gnome-background-properties /usr/share/gnome-background-properties
 sudo apt purge deja-dup gdebi gnome-games gnote hexchat inkscape libreoffice* remmina sound-juicer synaptic yelp --autoremove -y
 sudo apt purge firefox-esr --autoremove -y
 sudo apt purge snapd --autoremove -y
