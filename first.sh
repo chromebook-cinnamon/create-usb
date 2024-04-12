@@ -52,7 +52,7 @@ sudo cp -r ubuntucinnamon-wallpapers/usr/share/gnome-background-properties /usr/
 sudo git clone https://github.com/ubuntucinnamon/ubuntucinnamon-artwork/
 sudo cp -r ubuntucinnamon-artwork/etc/lightdm/lightdm.conf.d/ /etc/lightdm/
 sudo git clone https://github.com/ubuntucinnamonremix/kimmo-icon-theme
-sudo cp -r kinmo-icon-theme/Kinmo* /usr/share/icons/
+sudo cp -r kinmo-icon-theme/usr/share/icons/Kinmo* /usr/share/icons/
 sudo git clone https://github.com/ubuntucinnamon/yaru-cinnamon
 sudo cp -r yaru-cinnamon/usr/share/themes/* /usr/share/themes/
 sudo cp -r yaru-cinnamon/usr/share/icons/* /usr/share/icons/
